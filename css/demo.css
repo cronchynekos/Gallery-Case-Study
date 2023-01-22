@@ -288,7 +288,7 @@ main {
 	position: relative;
 	z-index: 2;
 	display: block;
-	margin: 0 auto;
+	margin-right: 15rem;
 	cursor: none;
 }
 
@@ -462,7 +462,7 @@ main {
   
   .cursor.hover {
 	transform: translate(-50%, -50%) scale(4);
-	transition: transform 250ms ease-in-out;
+	transition: transform 150ms ease;
   }
   
   /* .inner.hover {
