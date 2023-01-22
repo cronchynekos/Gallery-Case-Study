@@ -1,13 +1,31 @@
-/**
- * main.js
- * http://www.codrops.com
- *
- * Licensed under the MIT license.
- * http://www.opensource.org/licenses/mit-license.php
- * 
- * Copyright 2017, Codrops
- * http://www.codrops.com
- */
+const cursor = document.querySelectorAll(".cursor");
+const links = document.querySelectorAll(".grid__item");
+const fx = document.querySelectorAll('.control--effects > .control__btn');
+document.documentElement.style.cursor = 'none';
+
+
+window.addEventListener("mousemove", (e) => {
+  
+  let x = e.pageX;
+  let y = e.pageY;
+  
+  cursor.forEach(el => {
+    el.style.left = `${x}px`;
+    el.style.top = `${y}px`;
+    
+    links.forEach(link => {
+      link.addEventListener("mouseenter", () => {
+        el.classList.add("hover");
+      })
+      link.addEventListener("mouseleave", () => {
+        el.classList.remove("hover");
+      })
+    })
+    
+  })
+  
+})
+
 ;(function(window) {
 
 	/**
@@ -190,10 +208,21 @@
 		});
 	}
 
+	// function initEvents() {
+	// 	// Switching grids radio buttons.
+	// 	switchGridCtrls.forEach(function(ctrl) {
+	// 		ctrl.addEventListener('click', switchGrid);
+	// 	});
+	// 	// Effect selection.
+	// 	fxCtrls.forEach(function(ctrl) {
+	// 		ctrl.addEventListener('click', applyFx);
+	// 	});
+	// }
 	function initEvents() {
 		// Switching grids radio buttons.
 		switchGridCtrls.forEach(function(ctrl) {
 			ctrl.addEventListener('click', switchGrid);
+			ctrl.addEventListener('click', applyFx);
 		});
 		// Effect selection.
 		fxCtrls.forEach(function(ctrl) {
@@ -222,7 +251,7 @@
 			grids[currentGrid].classList.remove('grid--loading');
 
 			// Apply effect.
-			loaders[currentGrid]._render(ev.target.getAttribute('data-fx'));
+			loaders[currentGrid]._render("Bes");
 		}, 500);
 	}
 
