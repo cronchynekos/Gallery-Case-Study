@@ -1,5 +1,5 @@
 const cursor = document.querySelectorAll(".cursor");
-const links = document.querySelectorAll(".grid__item");
+const links = document.querySelectorAll(".grid__item, .menu__link, .control__radio");
 const fx = document.querySelectorAll('.control--effects > .control__btn');
 document.documentElement.style.cursor = 'none';
 
@@ -183,6 +183,7 @@ window.addEventListener("mousemove", (e) => {
 
 	function init() {
 		// Preload images
+		window.addEventListener('load', applyFx);
 		imagesLoaded(body, function() {
 			// Initialize Masonry on each grid.
 			grids.forEach(function(grid) {
