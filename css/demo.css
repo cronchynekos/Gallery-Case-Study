@@ -7,8 +7,8 @@
 }
 
 :root {
-	--clr-light: rgb(243, 239, 239);
-	--clr-dark: #00332a;
+	--clr-light: rgb(255, 255, 255);
+	--clr-dark: #001d18;
 	--clr-primary: #dbffa2;
 	--clr-secondary: #2b3534;
 	/* --clr-accent: #ff7750; */
@@ -22,7 +22,7 @@
   
   .darkmode {
 	--clr-light: white;
-	--clr-dark: #2b3534;
+	--clr-dark: #202423;
 	--clr-primary: #202302;
 	--clr-secondary: #7a9b98;
 	/* --clr-accent: #ff7750; */
