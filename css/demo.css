@@ -283,7 +283,7 @@ main {
 
 .control__radio:not(:checked):hover + .control__label,
 .control__btn:hover {
-	color: white;
+	color: rgb(165, 165, 165);
 }
 
 .control__btn {
@@ -506,6 +506,9 @@ main {
 	width: 100%;
 	text-align: center;
 	margin-top: 1em;
+	font-family: "Boogaloo", sans-serif;
+	letter-spacing: 2px;
+	font-size: 3rem;
 }
 
 .section--menu {
