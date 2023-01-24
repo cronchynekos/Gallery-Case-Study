@@ -32,7 +32,7 @@
 
   .dark-mode-toggle {
 	position: absolute;
-	z-index: 0;
+	z-index: 15;
 	top: 4em;
 	right: 4em;
 	color: var(--foreground);
@@ -67,7 +67,7 @@ body {
 .js .loading::after {
 	content: '';
 	position: fixed;
-	z-index: 0;
+	z-index: 10;
 }
 
 .loading::before {
@@ -188,7 +188,7 @@ main {
 /* Header */
 .gallery-header {
 	position: relative;
-	z-index: 100;
+	z-index: 1;
 	display: flex;
 	align-items: center;
 	width: 100%;
@@ -262,7 +262,7 @@ main {
 
 .control__radio {
 	position: absolute;
-	z-index: 10;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -314,7 +314,7 @@ main {
 
 .grid--hidden {
 	position: fixed !important;
-	z-index: 0;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -325,7 +325,7 @@ main {
 .js .grid--loading::before,
 .js .grid--loading::after {
 	content: '';
-	z-index: 0;
+	z-index: 10;
 }
 
 .js .grid--loading::before {
@@ -378,7 +378,7 @@ main {
 
 .grid__reveal {
 	position: absolute;
-	z-index: 0;
+	z-index: 5;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -405,8 +405,8 @@ main {
 @media screen and (min-width: 70em) {
 	.grid .grid__item,
 	.grid .grid__sizer {
-		width: calc(25% - 30px);
-		margin: 0 15px 30px;
+		width: calc(20% - 30px);
+		margin: 0 12px 25px;
 	}
 	/* Grid types */
 	.grid--type-b .grid__item,
@@ -509,6 +509,7 @@ main {
 	font-family: "Boogaloo", sans-serif;
 	letter-spacing: 4px;
 	font-size: 3.5rem;
+	z-index: 12;
 }
 
 .section--menu {
@@ -673,6 +674,3 @@ main {
 	align-items: center;
 }
 
-.zoom{
-	z-index: 25;
-}
