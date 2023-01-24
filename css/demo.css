@@ -116,6 +116,7 @@ a:focus {
 main {
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center
 }
 
 /* Icons */
@@ -130,11 +131,13 @@ main {
 .content--side {
 	position: relative;
 	z-index: 0;
-	width: 13em;
-	min-width: 130px;
+	/* width: 20em; */
+	min-width: 300px;
 	max-height: 100vh;
-	padding: 0 1em;
-	order: 2;
+	/* padding: 0 1em; */
+	order: 1;
+	justify-content: center
+
 }
 
 .content--center {
@@ -152,7 +155,7 @@ main {
 	flex-wrap: wrap;
 	justify-content: center;
 	width: 100%;
-	padding: 8em 1em 3em;
+	/* padding: 8em 1em 3em; */
 	text-align: center;
 	order: 5;
 }
@@ -193,7 +196,7 @@ main {
 	align-items: center;
 	width: 100%;
 	/* padding: 2em 1em 2em; */
-	order: 1;
+	order: 2;
 	height: 0;
 }
 
@@ -242,22 +245,25 @@ main {
 
 /* Controls */
 .control--grids {
-	margin: 0 0 2.5em;
+	margin: 0 0 0em;
 	text-align: right;
+	
 }
 
 .control__title {
 	font-size: 0.85em;
-	display: block;
+	display: flex;
 	width: 100%;
-	margin: 0 0 1em;
+	/* margin: 0 0 1em; */
 	color: #e6629a;
 }
 
 .control__item {
 	position: relative;
-	display: block;
-	margin: 0 0 0.5em;
+	display: flex;
+	margin: 0.5em;
+	float: left;
+	transform: translate(-370%, 150%);
 }
 
 .control__radio {
@@ -287,7 +293,7 @@ main {
 }
 
 .control__btn {
-	display: block;
+	/* display: block; */
 	width: 100%;
 	margin: 0 0 0.5em;
 	padding: 0;
@@ -308,7 +314,8 @@ main {
 	position: relative;
 	z-index: 0;
 	display: block;
-	margin-right: 7rem;
+	margin-right: 0rem;
+	margin-left: 7rem;
 	/* cursor: none; */
 }
 
@@ -505,11 +512,11 @@ main {
 	position: relative;
 	width: 100%;
 	text-align: center;
-	margin: .75em 0em .25em 0em;
-	font-family: "Boogaloo", sans-serif;
+	margin: .5em 0em .25em 0em;
+	font-family: "Abel", sans-serif;
 	letter-spacing: 4px;
-	font-size: 3.5rem;
-	z-index: 12;
+	font-size: 2rem;
+	z-index: 0;
 }
 
 .section--menu {
@@ -517,8 +524,8 @@ main {
 	overflow: hidden;
 	/* min-height: 80vh; */
 	/* padding: 2em 0 0em; */
-	left: 50%;
-	transform: translateX(-50%);
+	left: 5.75%;
+	transform: translateX(5.75%);
 }
 
 .menu {

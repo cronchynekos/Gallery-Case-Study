@@ -1,4 +1,4 @@
 mediumZoom('.zoom', {
-    margin: 50,
+    margin: 60,
     background: "var(--background)"
 })
