@@ -1,7 +1,7 @@
 const cursor = document.querySelectorAll(".cursor");
 const links = document.querySelectorAll(".grid__item, .menu__link, .control__radio");
 const fx = document.querySelectorAll('.control--effects > .control__btn');
-document.documentElement.style.cursor = 'none';
+// document.documentElement.style.cursor = 'none';
 
 
 window.addEventListener("mousemove", (e) => {

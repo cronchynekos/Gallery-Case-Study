@@ -3,18 +3,64 @@
 *::before {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
-	cursor: none;
+	/* cursor: none; */
 }
+
+:root {
+	--clr-light: rgb(243, 239, 239);
+	--clr-dark: #00332a;
+	--clr-primary: #dbffa2;
+	--clr-secondary: #2b3534;
+	/* --clr-accent: #ff7750; */
+  
+	--foreground: var(--clr-dark);
+	--background: var(--clr-light);
+  
+	--ff-title: "Playfair Display", serif;
+	--ff-body: "Assistant", sans-serif;
+  }
+  
+  .darkmode {
+	--clr-light: white;
+	--clr-dark: #2b3534;
+	--clr-primary: #202302;
+	--clr-secondary: #7a9b98;
+	/* --clr-accent: #ff7750; */
+	--foreground: var(--clr-light);
+	--background: var(--clr-dark);
+  }
+
+  .dark-mode-toggle {
+	position: absolute;
+	z-index: 100;
+	top: 2.5em;
+	right: 3em;
+	color: var(--foreground);
+	border: 2px solid currentColor;
+	padding: 4px;
+	background: transparent;
+	cursor: pointer;
+	border-radius: 5px;
+	width: 30px;
+	height: 30px;
+  }
+  
+  .click-here {
+	width: 100px;
+	right: 1.5em;
+	position: absolute;
+	top: 3em;
+  }
 
 body {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 14px;
 	font-weight: 500;
-	color: #82888a;
-	background: #2c2d31;
+	background: var(--background);
+  	color: var(--foreground);
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
-	cursor: none;
+	/* cursor: none; */
 }
 
 .js .loading::before,
@@ -38,8 +84,8 @@ body {
 	width: 40px;
 	height: 40px;
 	margin: -20px 0 0 -20px;
-	border: 8px solid #383a41;
-	border-bottom-color: #565963;
+	border: 8px solid var(--clr-primary);
+	border-bottom-color: var(--clr-primary);
 	border-radius: 50%;
 	animation: animLoader 0.8s linear infinite forwards;
 }
@@ -84,7 +130,7 @@ main {
 .content--side {
 	position: relative;
 	z-index: 100;
-	width: 15vw;
+	width: 13em;
 	min-width: 130px;
 	max-height: 100vh;
 	padding: 0 1em;
@@ -137,6 +183,8 @@ main {
 	margin: 0 auto;
 }
 
+
+
 /* Header */
 .gallery-header {
 	position: relative;
@@ -144,8 +192,9 @@ main {
 	display: flex;
 	align-items: center;
 	width: 100%;
-	padding: 3em 1em 4em;
+	/* padding: 2em 1em 2em; */
 	order: 1;
+	height: 0;
 }
 
 .gallery-header__title {
@@ -163,7 +212,7 @@ main {
 	font-weight: bold;
 	display: inline-block;
 	padding: 0 0.25em;
-	color: #42454c;
+	color: var(--clr-dark);
 }
 
 /* .gallery-header__title::after {
@@ -218,13 +267,13 @@ main {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	cursor: none;
+	/* cursor: none; */
 	opacity: 0;
 }
 
 .control__label {
 	white-space: nowrap;
-	cursor: none;
+	/* cursor: none; */
 }
 
 .control__radio:checked + .control__label {
@@ -246,7 +295,7 @@ main {
 	color: inherit;
 	border: none;
 	background: none;
-	cursor: none;
+	/* cursor: none; */
 }
 
 .control__btn:focus {
@@ -259,8 +308,8 @@ main {
 	position: relative;
 	z-index: 2;
 	display: block;
-	margin-right: 15rem;
-	cursor: none;
+	margin-right: 7rem;
+	/* cursor: none; */
 }
 
 .grid--hidden {
@@ -295,8 +344,8 @@ main {
 	width: 40px;
 	height: 40px;
 	margin: 0 0 0 -20px;
-	border: 8px solid #383a41;
-	border-bottom-color: #565963;
+	border: 8px solid var(--clr-dark);
+	border-bottom-color: var(--clr-dark);
 	border-radius: 50%;
 	animation: animLoader 0.8s linear forwards infinite;
 }
@@ -424,7 +473,8 @@ main {
   }
   
   .outer {
-	border: 1px solid white;
+	border: 1px solid var(--foreground);
+	display: none;
   }
   
   /* .outer.hover {
@@ -434,6 +484,7 @@ main {
   .inner {
 	background: #f7f7f720;
 	/* transition: 250ms ease-out; */
+	display: none;
   }
   
   .cursor.hover {
@@ -450,13 +501,18 @@ main {
 
   /* Line Menu */
 
-
+.name{
+	position: relative;
+	width: 100%;
+	text-align: center;
+	margin-top: 1em;
+}
 
 .section--menu {
 	position: relative;
 	overflow: hidden;
 	/* min-height: 80vh; */
-	padding: 2em 0 0em;
+	/* padding: 2em 0 0em; */
 	left: 50%;
 	transform: translateX(-50%);
 }
@@ -495,7 +551,7 @@ main {
 	-webkit-touch-callout: none;
 	-khtml-user-select: none;
 	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-	cursor: none;
+	/* cursor: none; */
 }
 
 .menu__link:hover,
@@ -514,14 +570,14 @@ main {
 	width: 120px;
 	height: 3em;
 	text-align: center;
-	color: #b5b5b5;
+	color: var(--foreground);
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 }
 
 .menu--alonso .menu__link:hover,
 .menu--alonso .menu__link:focus {
-	color: #929292;
+	color: var(--clr-secondary);
 }
 
 .menu--alonso .menu__item--current .menu__link {
@@ -537,7 +593,7 @@ main {
 	width: 120px;
 	height: 2px;
 	pointer-events: none;
-	border: 1px solid #2c2d31;
+	border: 1px solid var(--background);
 	border-width: 0 45px;
 	background: #d94f5c;
 	-webkit-transition: -webkit-transform 0.5s;
