@@ -32,7 +32,7 @@
 
   .dark-mode-toggle {
 	position: absolute;
-	z-index: 100;
+	z-index: 0;
 	top: 4em;
 	right: 4em;
 	color: var(--foreground);
@@ -67,7 +67,7 @@ body {
 .js .loading::after {
 	content: '';
 	position: fixed;
-	z-index: 1000;
+	z-index: 0;
 }
 
 .loading::before {
@@ -129,7 +129,7 @@ main {
 
 .content--side {
 	position: relative;
-	z-index: 100;
+	z-index: 0;
 	width: 13em;
 	min-width: 130px;
 	max-height: 100vh;
@@ -306,7 +306,7 @@ main {
 
 .grid {
 	position: relative;
-	z-index: 2;
+	z-index: 0;
 	display: block;
 	margin-right: 7rem;
 	/* cursor: none; */
@@ -314,7 +314,7 @@ main {
 
 .grid--hidden {
 	position: fixed !important;
-	z-index: 1;
+	z-index: 0;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -325,7 +325,7 @@ main {
 .js .grid--loading::before,
 .js .grid--loading::after {
 	content: '';
-	z-index: 1000;
+	z-index: 0;
 }
 
 .js .grid--loading::before {
@@ -378,7 +378,7 @@ main {
 
 .grid__reveal {
 	position: absolute;
-	z-index: 50;
+	z-index: 0;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -671,4 +671,8 @@ main {
 	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
+}
+
+.zoom{
+	z-index: 25;
 }
