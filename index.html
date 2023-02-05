@@ -10,20 +10,40 @@
 		<!-- <link href="https://fonts.googleapis.com/css?family=Roboto+Mono:300,500,700" rel="stylesheet"> -->
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=Abel&family=Boogaloo&family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">
-		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Abel&family=Ovo&family=Roboto+Condensed:wght@300;400&family=Roboto+Mono:wght@300;500;700&display=swap" rel="stylesheet">		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
 		<link rel="stylesheet" type="text/css" href="css/demo.css" />
 		<script>document.documentElement.className = 'js';</script>
 	</head>
 	<body class="loading">
 		<main>
-			<h1 class="name">Nathanael Kim</h1>
+			<h1 class="name">Cronchynekos</h1>
 			<section class="section section--menu" id="Alonso">
 				<nav class="menu menu--alonso">
 					<ul class="menu__list">
 						<li class="menu__item menu__item--current"><a href="#" class="menu__link">Home</a></li>
 						<li class="menu__item"><a href="#" class="menu__link">Gallery</a></li>
-						<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+						<li class="menu__item dropdown" data-dropdown>
+							<a href="#" class="menu__link" data-dropdown-button>Portfolio</a>
+							<div class="dropdown-menu">
+								<!-- dropdown content -->
+								<div class="content content--side">
+									<div class="control control--grids">
+										<div class="control__item">
+											<input class="control__radio" type="radio" name="grid-type" value="grid--type-a" id="control-grid-a" checked>
+											<label class="control__label" for="control-grid-a">Exhibit A</label>
+										</div>
+										<div class="control__item">
+											<input class="control__radio" type="radio" name="grid-type" value="grid--type-b" id="control-grid-b">
+											<label class="control__label" for="control-grid-b">Exhibit B</label>
+										</div>
+										<div class="control__item">
+											<input class="control__radio" type="radio" name="grid-type" value="grid--type-c" id="control-grid-c">
+											<label class="control__label" for="control-grid-c">Exhibit C</label>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</li>
 						<li class="menu__item"><a href="#" class="menu__link">About</a></li>
 						<li class="menu__item"><a href="#" class="menu__link">Contact</a></li>
 						<li class="menu__line"></li>
@@ -38,9 +58,8 @@
 				<svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 496"><path fill="currentColor" 
 					d="M8,256C8,393,119,504,256,504S504,393,504,256,393,8,256,8,8,119,8,256ZM256,440V72a184,184,0,0,1,0,368Z" transform="translate(-8 -8)"/></svg>
 			</button>
-			<div class="content content--side">
+			<!-- <div class="content content--side">
 				<div class="control control--grids">
-					<span class="control__title">Exhibitions</span>
 					<div class="control__item">
 						<input class="control__radio" type="radio" name="grid-type" value="grid--type-a" id="control-grid-a" checked>
 						<label class="control__label" for="control-grid-a">Exhibit A</label>
@@ -54,7 +73,7 @@
 						<label class="control__label" for="control-grid-c">Exhibit C</label>
 					</div>
 				</div>	
-			</div>
+			</div> -->
 
 			
 			<!-- Original fx button -->
@@ -71,187 +90,184 @@
 				<div class="grid grid--type-a">
 					<div class="grid__sizer"></div>
 					<div class="grid__item zoom">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/1.jpg" alt="Some image" /></a>
+						<a class="grid__link"><img class="grid__img zoom" src="img/set4/1.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/2.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/2.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/3.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/3.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/4.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/4.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/5.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/5.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/6.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/6.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/10.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/10.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/11.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/11.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/7.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/7.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/8.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/8.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/9.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/9.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/2.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/2.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/4.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/4.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/6.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/6.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/8.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/8.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/10.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/10.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/1.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/1.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set3/2.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set4/2.jpg" alt="Some image" /></a>
 					</div>
 				</div>
 				<div class="grid grid--type-b">
 					<div class="grid__sizer"></div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/11.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/11.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/5.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/5.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/2.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/2.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/1.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/1.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/4.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/4.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/6.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/6.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/7.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/7.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/8.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/8.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/5.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/2.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/2.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/3.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/3.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/4.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/4.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/5.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/5.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/6.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/6.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/7.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/7.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/8.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/8.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/1.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/1.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/2.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/2.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/3.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/3.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/4.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/4.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/5.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/5.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/6.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/6.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/7.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/7.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/8.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/8.jpg" alt="Some image" /></a>
-					</div>
-					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/11.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set5/11.jpg" alt="Some image" /></a>
 					</div>
 				</div>
 				<div class="grid grid--type-c">
 					<div class="grid__sizer"></div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/1.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/1.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/2.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/2.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/3.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/3.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/4.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/4.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/5.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/5.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/6.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/6.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/7.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/7.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/8.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/8.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/9.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/9.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/10.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/10.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/11.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/11.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/2.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/2.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/4.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/4.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/8.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/8.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/10.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/10.jpg" alt="Some image" /></a>
 					</div>
 					<div class="grid__item">
-						<a class="grid__link" href="#"><img class="grid__img zoom" src="img/set1/1.jpg" alt="Some image" /></a>
+						<a class="grid__link" ><img class="grid__img zoom" src="img/set6/1.jpg" alt="Some image" /></a>
 					</div>
 				</div>
 			</div>
@@ -269,6 +285,7 @@
 		<script src="js/darkmode.js"></script>
 		<script src="js/medium-zoom.min.js"></script>
 		<script src="js/medium.js"></script>
+		<script src="js/dropdown.js" defer></script>
 		<script>
 			(function() {
 				[].slice.call(document.querySelectorAll('.menu')).forEach(function(menu) {
