@@ -535,7 +535,8 @@ main {
 	width: 100%;
 	text-align: center;
 	margin: .5em 0em .25em 0em;
-	font-family: "Abel", sans-serif;
+	font-family: "Ovo", serif;
+	font-weight: 600;
 	letter-spacing: 4px;
 	font-size: 2rem;
 	z-index: 0;
@@ -572,8 +573,9 @@ main {
 }
 
 .menu__link {
-	font-size: 1.05em;
-	font-weight: bold;
+	font-size: 1.35em;
+	font-family: 'Ovo', serif;
+	font-weight: 400;
 	display: block;
 	padding: .5em;
 	cursor: pointer;
